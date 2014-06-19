@@ -1,0 +1,12 @@
+<div class="media">
+  <a href="#" class="pull-left">
+    <img src="<%= hit.user.avatar_url %>" class="media-object" width="100" height="100" />
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">
+      <%= hit.user.name %>
+      <small><%= time_ago_in_words(hit.created_at) %> ago</small>
+    </h4>
+    <p><%= hit.message %></p>
+  </div>
+</div>
